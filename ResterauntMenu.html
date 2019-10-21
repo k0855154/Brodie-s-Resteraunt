@@ -2,38 +2,57 @@
 <html>
 
 <head>
-    <span class="body">
-            <div id="logo" h1>The Fitnes Gram Diner</div>
-            <title>Menu</title>
-    </span>
-
     <link rel="stylesheet" href="styles.css">
     <script src="Script.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
-
-
-    <h1>
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <span class="selected">
-        <a href="#">Home</a>
-        </span>
-            <a href="ResterauntAbout.html">About</a>
-            <span class="selected">
-            <a href="">Menu</a>
-            </span>
-            <a href="#">Contact</a>
-        </div>
-
-        <!-- Use any element to open the sidenav -->
-        <button class="btn button">
-    <span onclick="openNav()">Menu</span>
-    </button>
-        <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-        <div id="main">
-        </div>
-    </h1>
 </head>
 
+<body>
+    <div w3-include-html="nav-menu.html"></div>
+
+    <div w3-include-html="banner.html"></div>
+
+    <div class="Menu Image">
+    </div>
+    <div class="grid-container">
+        <div class="grid-item item1">Menu</div>
+        <div class="grid-item">Salad</div>
+        <div class="grid-item">Samich</div>
+        <div class="grid-item">Fish and Chips</div>
+        <div class="grid-item">Cheeseborger</div>
+        <div class="grid-item">Sand
+            <img class="ImageSand" src="https://images.unsplash.com/photo-1534171472159-edb6d1e0b63c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80">
+        </div>
+        <div class="grid-item">Grass</div>
+        <div class="grid-item">Footboll</div>
+        <div class="grid-item">Concrete</div>
+        <div class="grid-item">Broken Glass
+            <img class="ImageBrokenG" src="https://i.imgur.com/It3pASC.png">
+        </div>
+        <div class="grid-item">Fries</div>
+        <div class="grid-item">Turf</div>
+        <div class="grid-item">Baseboll</div>
+    </div>
+    <button class="hamburger--emphatic" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+
+
+
+
+
+    <link href="hamburgers.css" rel="stylesheet">
+    <script src="include.js"></script>
+</body>
+
 </html>
+<div id="burger" class="hamburger burger burger-squeeze" onclick="toggleMenu()">
+    <div class="burger-lines"></div>
+</div><button class="hamburger hamburger--collapse is-active" type="button">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
